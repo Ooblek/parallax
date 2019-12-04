@@ -1,0 +1,63 @@
+html body{
+  margin:0;
+  padding:0;
+
+  font-family: sans-serif;
+}
+
+
+
+.container{
+  display:flex;
+  flex-direction: column;
+  width:100%;
+  height:100%;
+  color: white;
+  z-index: 1000;
+  padding:3%
+  
+  
+}
+
+
+.parallax-layer {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-position: bottom center;
+  background-repeat: repeat-x;
+  background-size: 1050px 204px;
+}
+
+
+.layer-0 {
+  top: 0;
+  z-index: 5;
+  background: #f89e4c  no-repeat top 40px center;
+  background-size: 120px 138.5px;
+}
+.layer-1 {
+  top: -100px;
+  z-index: 5;
+  
+}
+
+
+.layer-3 {
+  top: -10px;
+  z-index: 15;
+  background-image: url('./svgs/Layer\ 7.png');
+}
+.layer-4 {
+  top: 65px;
+  z-index: 20;
+  background-image: url('./svgs/Layer\ 6.png');
+}
+.layer-5 {
+  top: 150px;
+  z-index: 25;
+  background-image: url('./svgs/Layer\ 5.png');
+}
+
