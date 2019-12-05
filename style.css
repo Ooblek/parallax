@@ -8,6 +8,13 @@ html body{
 
 
 
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
 .container{
   display:flex;
   flex-direction: column;
@@ -19,6 +26,15 @@ html body{
   
 }
 
+.mob{
+  padding-bottom: 100px;
+}
+
+.card{
+  flex-direction:column;
+  
+ 
+}
 
 
 
@@ -101,6 +117,12 @@ html body{
   
 }
 
+
+.cell{
+
+  display: flex;
+  flex-direction: column;
+}
 
 .cell img {
   filter: grayscale(1);
@@ -216,11 +238,60 @@ input[type=submit]:hover{
   background-color: #ff6f00dc;
 }
 
+.footer{
+  
+  width:100%;
+  flex-direction:column;
+  align-items: center;;
+  
+  
+}
 
 
 
 
+/*spinner*/
+.spinner-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  z-index: 999999;
+  }
 
+  .spinner{
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+    text-align: center;
+    color:white;
+    border-top: 16px solid #f14b01;
+  border-right: 16px solid #79081c;
+  border-bottom: 16px solid red;
+  border-left: 16px solid orange;
+  }
+
+  
+
+
+  [data-scroll] {
+    transition: all 1s;
+  }
+  [data-scroll="in"] {
+
+    transform: translateY(0);
+  }
+  [data-scroll="out"] {
+
+    transform: translateY(100px);
+  }
+  
 
 
 
@@ -262,7 +333,8 @@ input[type=submit]:hover{
   }
 
   .wedo{
-    align-items: center;
+    text-align: center;
+    justify-content: center;
      padding-top:10%;
      padding-bottom:0%
   }
@@ -278,10 +350,31 @@ input[type=submit]:hover{
   }
   .cell {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    
     
   }
-  .cell:hover{
+  .footer{
+  
+    width:100%;
+    flex-direction:row;
+    text-align: center;
+    align-items: center;;
     
+    
+  }
+
+  .spinner{
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 40%;
+  }
+
+  .spinner img{
+    top:1000px;
+    max-width:50%;
   }
 
   
@@ -294,6 +387,8 @@ input[type=submit]:hover{
 /*desktops */
 @media screen and (min-width: 1000px) {
   .cell {
+    display: flex;
+    flex-direction: column;
     width: calc(100% / 3);
     
   }

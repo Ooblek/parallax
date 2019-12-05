@@ -18,6 +18,15 @@
     
 </head>
 <body>  
+
+
+
+    <!--Loading Spinner thing-->
+    <div class="spinner-wrapper">
+            <div class="spinner"> 
+                   
+            </div>
+        </div>
         
 
     <!--Parallax Images-->
@@ -43,42 +52,62 @@
 
     <!---Content-->
         
-        <div class="container" style = "position:absolute; top:650px;  ; color: white;align-items: center; z-index:100000">
+        <div class="container " style = "position:absolute; top:650px;  ; color: white;align-items: center; z-index:100000">
             <div class="container" style="align-items: center;  width:100%; margin-left:auto; margin-right:auto; padding-top:100px;">
-                <strong><h1>Our Mission</h1></strong>
+                <strong><h1 data-scroll >Our Mission</h1></strong>
                 
             </div>
-            <div class="container mission" style="align-items: space-between; width:80%; ;  ;">
-                    <div class="container wedo" >
-                            <i class="fas fa-check fa-5x"></i>
-                            <p>Deliver quality products</p>
+            <div class="container mission " style="align-items: space-between; width:80%; ;  ;">
+                    <div class="container wedo " data-scroll>
+                            <i class="fas fa-camera-retro fa-5x" ></i>
+                            <p>Take high quality Photographs</p>
                     </div>
-                    <div class="container wedo" >
+                    <div class="container wedo" data-scroll>
                             <i class="fas fa-dollar-sign fa-5x"></i>
                             <p>Be easy on your pocket</p>
                         </div>
-                    <div class="container wedo">
+                    <div class="container wedo" data-scroll>
                                 <i class="fas fa-clock fa-5x"></i>
-                            <p>Make timely deliveries</p>
+                            <p>Get products delivered on time</p>
                 </div>
             </div>
 
-            <div class="container" style="align-items: center;  width:100%; margin-left:auto; margin-right:auto; padding-top:10% ">
+            <div class="container " data-scroll style="align-items: center;  width:100%; margin-left:auto; margin-right:auto; padding-top:10% ">
                     <strong><h1>What we do</h1></strong>
                     
                 </div>
-                <div class="container mission" style="align-items: space-between; width:65%; ;flex-direction:column ">
+                <div class="container mission mob " data-scroll style="align-items: space-between; width:65%; ;flex-direction:column ">
                         <div class="container" style="align-items: center; text-align: center; font-size: 120%; line-height: 2em; font-weight:11;">
                                 
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nisi ut magni asperiores quidem ad placeat atque incidunt? Perferendis molestias eum suscipit eveniet blanditiis vitae repellat dolorem fugiat minima fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. A, earum voluptas rem modi ipsum quae doloribus beatae illum. Aspernatur quis molestiae repellat necessitatibus temporibus. Deleniti iste minus officia nulla cumque.</p>
+                                <p>We're a small team of photographers and designers based in Brunei and we're here to serve all your photgraphy and/or design needs. Our team is made up professionals with more than 15 years of experience in the fields of photography, videography and graphic design. We'll make sure you get what you want, the way you want it</p>
                         </div>
                         
             </div>
 
-            <div class="container" style="text-align: center; padding-top: 10%;">
+            <div class="container" data-scroll style="align-items: center;  width:100%; margin-left:auto; margin-right:auto; padding-top:100px;">
+                <strong><h1>Our Services</h1></strong>
+                
+            </div>
+            <div class="container mission mob" data-scroll style="justify-content: center; width:80%;  ;">
+                    <div class="container wedo" data-scroll >
+                            <i class="fas fa-camera fa-5x"></i>
+                            <p>Photography</p>
+                    </div>
+                    <div class="container wedo" data-scroll >
+                            <i class="fas fa-video fa-5x"></i>
+                            <p>Videography</p>
+                        </div>
+                    <div class="container wedo"  data-scroll>
+                                <i class="fas fa-edit fa-5x"></i>
+                            <p >Graphic design</p>
+                </div>
+            </div>
+            
+
+            <div class="container" data-scroll style="text-align: center; padding-top: 10%;">
                 <strong><h1>Our Work</h1></strong>
             </div>
-            <div class="container" style=" width:70%">
+            <div class="container mob" data-scroll style=" width:70%">
                 <div class="grid">
                     <div class="cell">
                         <img src="https://picsum.photos/id/123/4928/3264" class="responsive-image" />
@@ -111,10 +140,10 @@
                 
             </div>
 
-            <div class="container" style="text-align: center; padding-top: 10%;">
+            <div class="container" data-scroll style="text-align: center; padding-top: 10%;">
                 <strong><h1>The Team</h1></strong>
             </div>
-            <div class="container" style=" width:70%">
+            <div class="container mob" data-scroll style=" width:70%">
                 <div class="grid">
                     <div class="cell">
                         <img src="./svgs/headshots/079900.jpg" class="responsive-image" />
@@ -145,11 +174,11 @@
             </div>
 
 
-            <div class="container " style="align-items: center;  width:100%; margin-left:auto; margin-right:auto; padding-top:10% ">
+            <div class="container " data-scroll style="justify-content: center;  width:100%; margin-left:auto; margin-right:auto; padding-top:10%; text-align: center; ">
                 <strong><h1>Inquiries? Drop us a line</h1></strong>
                 
             </div>
-            <div class="container mission" style="align-items: space-between; width:65%; ;flex-direction:column ">
+            <div class="container mission" data-scroll style="align-items: space-between; width:65%; ;flex-direction:column ">
                     <div class="container" style="align-items: center; text-align: center; font-size: 120%; line-height: 2em; font-weight:11;">
                             
                            <input type="text" placeholder="Name">
@@ -162,6 +191,9 @@
                            
                     </div>
                     
+
+
+
                     
         </div>
 
@@ -183,8 +215,21 @@
                 
               </div>
             
+
+
               <!----------->
+              <div class="container" style="align-items: center;  font-family: 'Courgette', cursive;font-size:60%;width:100%;  padding-top:20%;">
+                <strong><h1>© Alpaca Design</h1></strong>
+                <div class="container" style="justify-content: center; flex-direction: row; width: 20%; ">
+                   <a href="#" style="padding:5%;color:inherit"> <i class="fab fa-facebook fa-2x" ></i> </a> 
+                   <a href="#" style="padding:5%;color:inherit"> <i class="fab fa-instagram fa-2x" ></i> </a> 
+                   <a href="#" style="padding:5%;color:inherit"> <i class="fab fa-twitter fa-2x" ></i> </a> 
+                </div>
+                
+            </div>
             
+            
+             
 
       
 
@@ -218,11 +263,20 @@
 
 
     <script src="./rellax.min.js">
+    
         
     </script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
     <script src = "./modal.js"></script>
     <script>
         var rellax = new Rellax('.rellax');
+       
+        ScrollOut({
+            
+        });
+
+        
+
 
 
     </script>
