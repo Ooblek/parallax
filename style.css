@@ -1,8 +1,9 @@
 html body{
   margin:0;
   padding:0;
+  background-color:#030200 ;
 
-  font-family: sans-serif;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 
@@ -11,13 +12,14 @@ html body{
   display:flex;
   flex-direction: column;
   width:100%;
-  height:100%;
-  color: white;
-  z-index: 1000;
-  padding:3%
+  z-index: -10;
+  background-color: #030200;
+ 
   
   
 }
+
+
 
 
 .parallax-layer {
@@ -29,20 +31,48 @@ html body{
   background-position: bottom center;
   background-repeat: repeat-x;
   background-size: 1050px 204px;
+  overflow: hidden;
 }
 
 
 .layer-0 {
   top: 0;
   z-index: 5;
-  background: #f89e4c  no-repeat top 40px center;
+  background: #ff6f00  no-repeat top 40px center;
   background-size: 120px 138.5px;
 }
+
+
+.layer-0-text {
+  top: 0;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  text-align: center; 
+  padding-top:100px;
+  font-size: 400%;
+  font-family: 'Courgette', cursive;
+
+
+
+
+  
+  background-size: 120px 138.5px;
+}
+
 .layer-1 {
-  top: -100px;
-  z-index: 5;
+  top: 100px;
+  background:url('./svgs/Layer\ 8.png')  no-repeat top 40px center;
+
+  z-index: 2;
   
 }
+
+.mission{
+  flex-direction: column;
+}
+
 
 
 .layer-3 {
@@ -61,3 +91,211 @@ html body{
   background-image: url('./svgs/Layer\ 5.png');
 }
 
+.wedo{
+  align-items: center;
+   padding-top:30%;
+   padding-bottom: 10%;
+}
+.work{
+  max-width:100%
+  
+}
+
+
+.cell img {
+  filter: grayscale(1);
+  display: block;
+
+
+  transition: filter 0.1s;
+
+}
+.cell img:hover {
+  
+  filter: grayscale(0);
+  
+}
+.responsive-image {
+  max-width: 100%;
+}
+
+
+
+
+
+
+
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 2000; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9); 
+}
+
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+
+
+
+
+.modal-content {
+  animation-name: fade;
+  animation-duration: 0.1s;
+}
+
+@keyframes fade {
+  from {opacity: 0;}
+  to {opacity: 1}
+}
+
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+input[type=text], select,textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  transition:  0.5s;
+  border:2px solid;
+  border-radius: 4px;
+  box-sizing: border-box;
+  
+}
+textarea{
+  resize:vertical;
+}
+input[type=text]:focus {
+  border: 2px solid #ff6f00 ;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #ff6f00;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  transition:  0.5s;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover{
+  background-color: #ff6f00dc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*tablets*/
+
+@media only screen and (min-width: 601px) {
+  .layer-0-text {
+    top: 0;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: 500%;
+    text-align: center; 
+    padding-top:10%;
+
+    font-family: 'Courgette', cursive;
+    font-style: black;
+  
+    
+    background-size: 120px 138.5px;
+  }
+
+  .mission{
+    flex-direction: row !important;
+  }
+
+  .wedo{
+    align-items: center;
+     padding-top:10%;
+     padding-bottom:0%
+  }
+
+  .work{
+    max-width:100%
+    
+  }
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .cell {
+    width: 50%;
+    
+  }
+  .cell:hover{
+    
+  }
+
+  
+
+ 
+  
+}
+
+
+/*desktops */
+@media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(100% / 3);
+    
+  }
+  
+}
